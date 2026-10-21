@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mugenyi Shafik - Aspiring Full-Stack Software Developer skilled in HTML, CSS, JavaScript, and expanding into Python, Node.js, and React." />
+  <meta name="keywords" content="Mugenyi Shafik, Junior Developer, Web Developer, Frontend Developer, JavaScript, Python, React, Portfolio" />
+  <meta name="author" content="Mugenyi Shafik" />
+  <title>Mugenyi Shafik | Junior Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background Decorative Glows -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Mugenyi Shafik Home">
+        <span class="logo-badge">MS</span>
+        <span class="logo-text">Mugenyi<span>.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#roadmap" class="nav-link">Learning Journey</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Items: Theme Switcher & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary hide-mobile">Hire Me</a>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <i data-lucide="menu" class="open-icon"></i>
+          <i data-lucide="x" class="close-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#roadmap" class="mobile-nav-link">Learning Journey</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-block">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-header-profile">
+            <div class="hero-avatar-wrap">
+              <img src="assets/shafik.jpg" alt="Mugenyi Shafik" class="hero-avatar-img" />
+              <span class="hero-avatar-status" title="Active & Available for opportunities"></span>
+            </div>
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Open to Entry-Level Roles & Internships</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br />
+            <span class="gradient-text">Mugenyi Shafik</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I build </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            A passionate, self-driven junior software developer dedicated to crafting responsive, clean, and intuitive web experiences. Currently solidifying foundational front-end mastery and aggressively expanding into full-stack development with Python, Node.js, and React.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i data-lucide="mail"></i>
+            </a>
+            <button class="btn btn-outline copy-btn" data-copy="shafikmugenyi523@gmail.com" title="Copy email address">
+              <i data-lucide="copy"></i>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Quick Tech Stack Ribbon -->
+          <div class="hero-tech-ribbon">
+            <span class="ribbon-label">Primary Stack:</span>
+            <div class="ribbon-tags">
+              <span class="ribbon-tag tag-html"><i data-lucide="code-2"></i> HTML5</span>
+              <span class="ribbon-tag tag-css"><i data-lucide="palette"></i> CSS3</span>
+              <span class="ribbon-tag tag-js"><i data-lucide="braces"></i> JavaScript</span>
+              <span class="ribbon-tag tag-python"><i data-lucide="terminal"></i> Python</span>
+              <span class="ribbon-tag tag-node"><i data-lucide="server"></i> Node.js</span>
+              <span class="ribbon-tag tag-react"><i data-lucide="atom"></i> React</span>
+            </div>
+          </div>
+
+          <!-- Quick stats / highlights -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Core Techs Mastered</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Commitment to Growth</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">Daily</span>
+              <span class="stat-label">Coding & Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Code Editor Mockup with Interactive Run Button -->
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-header">
+              <div class="window-buttons">
+                <span class="btn-dot dot-red"></span>
+                <span class="btn-dot dot-yellow"></span>
+                <span class="btn-dot dot-green"></span>
+              </div>
+              <div class="code-tab">
+                <i data-lucide="file-code" class="tab-icon"></i>
+                <span>shafik_profile.js</span>
+              </div>
+              <button class="run-code-btn" id="run-code-btn" title="Click to run this JavaScript snippet">
+                <i data-lucide="play" class="run-icon"></i> Run
+              </button>
+            </div>
+            <div class="code-body-wrapper">
+              <div class="code-gutters" aria-hidden="true">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+              </div>
+              <div class="code-body">
+                <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Mugenyi Shafik"</span>,
+  <span class="code-prop">email</span>: <span class="code-str">"shafikmugenyi523@gmail.com"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"Junior Software Developer"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"JavaScript"</span>],
+  <span class="code-prop">levelingUp</span>: [<span class="code-str">"Python"</span>, <span class="code-str">"Node.js"</span>, <span class="code-str">"React"</span>],
+  <span class="code-prop">status</span>: <span class="code-str">"Ready for entry-level work"</span>,
+  <span class="code-method">hireShafik</span>: () =&gt; {
+    <span class="code-keyword">return</span> <span class="code-str">"Dedicated engineer ready to bring value!"</span>;
+  }
+};</code></pre>
+              </div>
+            </div>
+
+            <!-- Interactive Console Output Tray -->
+            <div class="code-console" id="code-console">
+              <div class="console-prompt">&gt; Output:</div>
+              <div class="console-msg" id="console-msg">Click "Run" above to execute developer.hireShafik()</div>
+            </div>
+
+            <div class="code-footer">
+              <span class="code-status">
+                <i data-lucide="check-circle" class="status-icon"></i> Ready • 0 errors
+              </span>
+              <span class="code-lines">UTF-8 • JavaScript (Node/ES6)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">The Passion Behind The Code</h2>
+          <p class="section-subtitle">
+            From discovering my first HTML tag to building dynamic JavaScript applications and exploring backend architectures.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main">
+            <div class="avatar-wrapper">
+              <img src="assets/shafik.jpg" alt="Mugenyi Shafik - Junior Software Developer" class="avatar-img" />
+              <div class="avatar-badge" title="Junior Software Developer">
+                <i data-lucide="code" class="badge-icon"></i>
+              </div>
+            </div>
+
+            <h3 class="about-name">Mugenyi Shafik</h3>
+            <p class="about-role">Junior Developer & Lifelong Learner</p>
+
+            <div class="about-text">
+              <p>
+                My programming journey started with a simple curiosity: <em>how do the websites and applications we use every single day actually work?</em> Once I wrote my first lines of HTML and styled them with CSS, I was hooked.
+              </p>
+              <p>
+                As I dove into <strong>JavaScript</strong>, static pages came to life with interactivity, event-driven behaviors, and asynchronous logic. I love the thrill of breaking down complex problems into clean, modular solutions.
+              </p>
+              <p>
+                Currently, I'm taking the leap into the broader engineering world—exploring <strong>Python</strong> for its versatility and algorithmic power, along with <strong>Node.js</strong> and <strong>React.js</strong> to build full-stack web applications from front to back.
+              </p>
+            </div>
+
+            <div class="personal-highlights">
+              <div class="highlight-item">
+                <i data-lucide="zap" class="highlight-icon"></i>
+                <div>
+                  <h4>Fast Learner</h4>
+                  <p>Quickly adapts to new tools, libraries, and design guidelines.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="git-branch" class="highlight-icon"></i>
+                <div>
+                  <h4>Modern Practices</h4>
+                  <p>Committed to semantic code, version control, and clean architecture.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="users" class="highlight-icon"></i>
+                <div>
+                  <h4>Collaborative Mindset</h4>
+                  <p>Excited to learn from senior engineers and contribute to real-world teams.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side cards: What Shafik brings to the table -->
+          <div class="about-side-cards">
+            <div class="feature-box">
+              <div class="feature-icon-box icon-purple">
+                <i data-lucide="layout"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Frontend Fundamentals</h4>
+                <p>Deep appreciation for semantic HTML5 structure, responsive CSS layouts (Flexbox, Grid), and cross-browser accessibility.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon-box icon-blue">
+                <i data-lucide="cpu"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Dynamic JavaScript</h4>
+                <p>Hands-on experience with DOM manipulation, ES6+ features, fetch API, asynchronous programming, and state tracking.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon-box icon-cyan">
+                <i data-lucide="layers"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Full-Stack Horizon</h4>
+                <p>Actively learning server-side programming with Node.js & Express, Python scripting, and component-driven UI with React.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon-box icon-green">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Work Ethic & Dedication</h4>
+                <p>Self-disciplined coding schedule, continuous project building, and relentless curiosity to solve bugs and write tests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">My Tech Stack & Toolkit</h2>
+          <p class="section-subtitle">
+            Technologies I have hands-on experience with, followed by the stack I am currently mastering.
+          </p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Category 1: Mastered / Core Stack -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-badge green-badge">
+                <i data-lucide="check-circle-2"></i>
+                <span>Learnt & Applied</span>
+              </div>
+              <h3>Core Frontend Development</h3>
+              <p>Strong foundations in the holy trinity of web development.</p>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon-wrapper html-color">
+                  <i data-lucide="code-2"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-level">Proficient</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-html" style="width: 90%;"></div>
+                  </div>
+                  <span class="skill-desc">Semantic tags, forms, accessibility (a11y), SEO basics</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon-wrapper css-color">
+                  <i data-lucide="palette"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">CSS3 & Styling</span>
+                    <span class="skill-level">Proficient</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-css" style="width: 85%;"></div>
+                  </div>
+                  <span class="skill-desc">Flexbox, CSS Grid, media queries, CSS variables, animations</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon-wrapper js-color">
+                  <i data-lucide="braces"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-js" style="width: 80%;"></div>
+                  </div>
+                  <span class="skill-desc">DOM manipulation, event handling, promises, async/await, API fetch</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon-wrapper responsive-color">
+                  <i data-lucide="smartphone"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">Responsive Design</span>
+                    <span class="skill-level">Proficient</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-responsive" style="width: 88%;"></div>
+                  </div>
+                  <span class="skill-desc">Mobile-first workflows, fluid typography, touch-friendly interfaces</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: In-Progress / Currently Learning -->
+          <div class="skills-category-card highlight-border">
+            <div class="category-header">
+              <div class="category-badge orange-badge">
+                <i data-lucide="flame"></i>
+                <span>Currently Leveling Up</span>
+              </div>
+              <h3>Expanding Into Full-Stack</h3>
+              <p>Actively studying and building with modern backend and UI ecosystems.</p>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon-wrapper python-color">
+                  <i data-lucide="terminal"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-level in-progress">In Progress (Active)</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-python" style="width: 55%;"></div>
+                  </div>
+                  <span class="skill-desc">Syntax, data structures, algorithms, automation scripts & logic</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon-wrapper node-color">
+                  <i data-lucide="server"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-level in-progress">In Progress (Active)</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-node" style="width: 50%;"></div>
+                  </div>
+                  <span class="skill-desc">Backend runtime, npm ecosystem, basic Express server creation, REST APIs</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon-wrapper react-color">
+                  <i data-lucide="atom"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">React.js</span>
+                    <span class="skill-level in-progress">In Progress</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-react" style="width: 45%;"></div>
+                  </div>
+                  <span class="skill-desc">Component hierarchy, JSX, props, state hooks (useState, useEffect)</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon-wrapper database-color">
+                  <i data-lucide="database"></i>
+                </div>
+                <div class="skill-info">
+                  <div class="skill-title-row">
+                    <span class="skill-name">Databases & SQL</span>
+                    <span class="skill-level in-progress">Upcoming</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill fill-db" style="width: 35%;"></div>
+                  </div>
+                  <span class="skill-desc">Relational database concepts, queries, CRUD operations & MongoDB basics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development Tools & Workflow -->
+        <div class="tools-strip">
+          <h4 class="tools-title">
+            <i data-lucide="wrench"></i> Development Tools & Everyday Workflow
+          </h4>
+          <div class="tools-badges">
+            <span class="tool-tag"><i data-lucide="git-commit"></i> Git Version Control</span>
+            <span class="tool-tag"><i data-lucide="github"></i> GitHub Collaboration</span>
+            <span class="tool-tag"><i data-lucide="terminal"></i> Visual Studio Code</span>
+            <span class="tool-tag"><i data-lucide="command"></i> Terminal / Bash CLI</span>
+            <span class="tool-tag"><i data-lucide="globe"></i> Chrome DevTools Debugging</span>
+            <span class="tool-tag"><i data-lucide="package"></i> NPM (Node Package Manager)</span>
+            <span class="tool-tag"><i data-lucide="figma"></i> UI/UX Prototyping Basics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP / LEARNING JOURNEY -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning Journey</span>
+          <h2 class="section-title">My Developer Growth Roadmap</h2>
+          <p class="section-subtitle">
+            A clear view of where Mugenyi Shafik started, what he has accomplished, and the strategic milestones ahead.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Step 1: Web Fundamentals -->
+          <div class="timeline-item completed">
+            <div class="timeline-marker">
+              <i data-lucide="check"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-done">Completed</span>
+                <span class="timeline-date">Stage 1</span>
+              </div>
+              <h3 class="timeline-title">Web Foundations: HTML5 & Modern CSS3</h3>
+              <p class="timeline-text">
+                Mastered semantic document structuring, accessibility principles, responsive CSS grid and flexbox architectures, CSS animations, and building pixel-perfect mobile-first web pages.
+              </p>
+              <div class="timeline-tags">
+                <span>Semantic HTML</span>
+                <span>Flexbox & Grid</span>
+                <span>Responsive Design</span>
+                <span>CSS Custom Properties</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: JavaScript Mastery -->
+          <div class="timeline-item completed">
+            <div class="timeline-marker">
+              <i data-lucide="check"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-done">Completed</span>
+                <span class="timeline-date">Stage 2</span>
+              </div>
+              <h3 class="timeline-title">Interactive Frontend: JavaScript (ES6+)</h3>
+              <p class="timeline-text">
+                Deepened algorithmic thinking and DOM control: event listeners, asynchronous code (Promises, async/await), fetching third-party REST APIs, local storage persistence, and form validation.
+              </p>
+              <div class="timeline-tags">
+                <span>ES6+ Syntax</span>
+                <span>DOM Manipulation</span>
+                <span>Async & Fetch API</span>
+                <span>Browser Storage</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Current Focus -->
+          <div class="timeline-item active">
+            <div class="timeline-marker pulse-marker">
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-current">Current Focus • In Progress</span>
+                <span class="timeline-date">Stage 3</span>
+              </div>
+              <h3 class="timeline-title">Python Logic & Node.js Backend</h3>
+              <p class="timeline-text">
+                Actively learning Python for programming logic, data structures, and script automation. Simultaneously learning Node.js with Express to build server-side routes, handle HTTP requests, and create custom RESTful APIs.
+              </p>
+              <div class="timeline-tags">
+                <span>Python Syntax & OOP</span>
+                <span>Node.js Runtimes</span>
+                <span>Express.js Framework</span>
+                <span>REST API Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Next Focus -->
+          <div class="timeline-item upcoming">
+            <div class="timeline-marker">
+              <i data-lucide="clock"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-upcoming">Upcoming Goal</span>
+                <span class="timeline-date">Stage 4</span>
+              </div>
+              <h3 class="timeline-title">React.js & Full-Stack Application Engineering</h3>
+              <p class="timeline-text">
+                Connecting modern component-driven frontends using React.js with backend databases (SQL / MongoDB) to deliver scalable, end-to-end full-stack web applications.
+              </p>
+              <div class="timeline-tags">
+                <span>React Hooks</span>
+                <span>Full-Stack Integration</span>
+                <span>Database CRUD</span>
+                <span>Deployment & CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects & Practical Applications</h2>
+          <p class="section-subtitle">
+            Real projects demonstrating problem solving, responsive styling, and dynamic JavaScript execution.
+          </p>
+
+          <!-- Interactive Project Category Filters -->
+          <div class="project-filters" id="project-filters">
+            <button class="filter-btn active" data-filter="all">
+              <i data-lucide="layers"></i> All Projects (<span id="count-all">4</span>)
+            </button>
+            <button class="filter-btn" data-filter="frontend">
+              <i data-lucide="code-2"></i> Frontend (HTML/CSS/JS)
+            </button>
+            <button class="filter-btn" data-filter="learning">
+              <i data-lucide="terminal"></i> Full-Stack & Python
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-preview preview-gradient-1">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-line w-70"></div>
+                  <div class="mockup-line w-40"></div>
+                  <div class="mockup-boxes">
+                    <div class="mockup-box active-box">✓ Done</div>
+                    <div class="mockup-box">○ Pending</div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Featured JS App</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+              </div>
+              <h3 class="project-title">Interactive Task & Habit Tracker</h3>
+              <p class="project-desc">
+                A sleek productivity web app featuring dynamic task creation, status filtering (All, Active, Completed), smooth animations, and data persistence using browser LocalStorage.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-link" data-project="task-tracker">
+                  <i data-lucide="play"></i> Try Demo
+                </button>
+                <a href="https://github.com/mugenyishafik" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-preview preview-gradient-2">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                </div>
+                <div class="mockup-content weather-mockup">
+                  <i data-lucide="sun-cloud" class="weather-icon"></i>
+                  <span class="weather-temp">27°C</span>
+                  <span class="weather-city">Kampala • Sunny</span>
+                </div>
+              </div>
+              <span class="project-badge">API Integration</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tech-tags">
+                <span>JavaScript Fetch</span>
+                <span>Weather REST API</span>
+                <span>Async / Await</span>
+                <span>CSS Grid</span>
+              </div>
+              <h3 class="project-title">Live Weather Forecast Dashboard</h3>
+              <p class="project-desc">
+                An asynchronous web application that queries live meteorological data from a REST API, displays temperature, wind speed, humidity, and dynamically updates UI themes based on weather condition.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-link" data-project="weather-dashboard">
+                  <i data-lucide="play"></i> Try Demo
+                </button>
+                <a href="https://github.com/mugenyishafik" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-preview preview-gradient-3">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                </div>
+                <div class="mockup-content portfolio-mockup">
+                  <img src="assets/shafik.jpg" alt="Mugenyi Shafik" class="avatar-sm-img" />
+                  <div class="mockup-line w-80"></div>
+                  <div class="mockup-line w-50"></div>
+                </div>
+              </div>
+              <span class="project-badge">Personal Brand</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tech-tags">
+                <span>Semantic HTML</span>
+                <span>CSS Variables</span>
+                <span>Vanilla JS</span>
+                <span>Dark/Light Mode</span>
+              </div>
+              <h3 class="project-title">Developer Portfolio Website</h3>
+              <p class="project-desc">
+                A fully responsive, accessible personal portfolio website built with clean vanilla code. Features theme switching, interactive timeline, typewriter animation, and responsive navigation.
+              </p>
+              <div class="project-actions">
+                <a href="#home" class="btn btn-sm btn-primary">
+                  <i data-lucide="eye"></i> Viewing Now
+                </a>
+                <a href="https://github.com/mugenyishafik" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: In Progress / Future -->
+          <div class="project-card" data-category="learning">
+            <div class="project-preview preview-gradient-4">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                  <span class="dot-sm"></span>
+                </div>
+                <div class="mockup-content code-mini">
+                  <code>&gt; python script.py</code>
+                  <code>[+] Processing data...</code>
+                  <code>[✔] Task completed!</code>
+                </div>
+              </div>
+              <span class="project-badge badge-wip">In Development</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Automation</span>
+                <span>CLI</span>
+                <span>Node.js / Express</span>
+              </div>
+              <h3 class="project-title">Python Automation & Utility Toolkit</h3>
+              <p class="project-desc">
+                A collection of practical Python automation scripts for file organization, data extraction, and a companion Node.js lightweight API server currently in development.
+              </p>
+              <div class="project-actions">
+                <span class="status-wip-tag">
+                  <i data-lucide="loader" class="spin-icon"></i> Under Construction
+                </span>
+                <a href="https://github.com/mugenyishafik" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DEMO MODAL FOR PROJECTS -->
+    <div class="modal" id="demo-modal" aria-hidden="true" role="dialog">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <i data-lucide="sparkles" class="modal-sparkle"></i>
+            <h3 id="modal-title">Live Demo</h3>
+          </div>
+          <button class="modal-close" id="modal-close" aria-label="Close modal">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <!-- Dynamic Content Loaded by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch With Shafik</h2>
+          <p class="section-subtitle">
+            Whether you have an internship opportunity, an entry-level position, a project collaboration, or simply want to say hello, my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p class="contact-card-sub">
+              I respond promptly and am eager to connect with engineering teams, mentors, and fellow developers.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-label">Email Address</span>
+                  <a href="mailto:shafikmugenyi523@gmail.com" class="contact-link" id="email-link">shafikmugenyi523@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="shafikmugenyi523@gmail.com" title="Copy email">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Kampala, Uganda (Available Globally / Remote)</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i data-lucide="clock-3"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-label">Availability</span>
+                  <span class="contact-val">Full-time, Part-time, Internship, Freelance</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="socials-wrap">
+              <span class="socials-title">Follow My Progress:</span>
+              <div class="social-links">
+                <a href="https://github.com/mugenyishafik" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                  <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter Profile">
+                  <i data-lucide="twitter"></i>
+                </a>
+                <a href="mailto:shafikmugenyi523@gmail.com" class="social-btn" aria-label="Send Direct Email">
+                  <i data-lucide="send"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-card">
+            <h3>Send a Direct Message</h3>
+            <p class="form-instruction">
+              Fill out the form below and I will get back to you within 24 hours.
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="name" name="name" placeholder="e.g. John Doe" required />
+                </div>
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="at-sign" class="input-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required />
+                </div>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="input-wrapper">
+                  <i data-lucide="help-circle" class="input-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="e.g. Junior Developer Role / Collaboration" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i data-lucide="message-square" class="input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" rows="5" placeholder="Hi Shafik, I noticed your portfolio and would love to chat about..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error">Please write a message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-badge">MS</span>
+          <span class="logo-text">MUGENYI SHAFIK</span>
+        </a>
+        <p>Junior Software Developer passionate about writing clean code and learning modern full-stack technologies.</p>
+      </div>
+
+      <div class="footer-links">
+        <span class="footer-title">Navigation</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-quote">
+        <span class="footer-title">Developer Philosophy</span>
+        <blockquote>
+          "Every master was once a beginner. The key is relentless consistency and curiosity."
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="current-year"></span> Mugenyi Shafik. Crafted with HTML5, CSS3 & JavaScript.</p>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top of page">
+          <span>Top</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
