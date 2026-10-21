@@ -1,4 +1,4 @@
-# 🚀 Mugenyi Shafik - Professional Developer Portfolio
+#  Mugenyi Shafik - Professional Developer Portfolio
 
 A modern, responsive, and high-performance personal portfolio website built with clean **HTML5**, **CSS3**, and **Vanilla JavaScript**. 
 
@@ -6,7 +6,7 @@ Designed specifically for **Mugenyi Shafik** to highlight his foundational stren
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 - **Theme Switcher**: Smooth Dark / Light mode toggle with local storage persistence.
 - **Hero Typewriter Effect**: Dynamic typing animation emphasizing current and upcoming tech stacks.
@@ -20,7 +20,7 @@ Designed specifically for **Mugenyi Shafik** to highlight his foundational stren
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MY PORTIFOLIA/
@@ -51,7 +51,7 @@ You don't need any complex installation. Simply open `index.html` in your browse
 
 ---
 
-## ✏️ How to Personalize & Customize
+## How to Personalize & Customize
 
 1. **Add Your Profile Photo**:
    - Save your photo in the `assets/` folder (e.g., `assets/shafik.jpg`).
@@ -76,7 +76,7 @@ You don't need any complex installation. Simply open `index.html` in your browse
 
 ---
 
-## 🚀 Free Deployment Guide
+## Free Deployment Guide
 
 ### Option 1: GitHub Pages (Free & Recommended)
 1. Initialize a git repository in this folder:
@@ -100,7 +100,7 @@ You don't need any complex installation. Simply open `index.html` in your browse
 
 ---
 
-### 📬 Contact Details Configured
+### Contact Details Configured
 - **Email**: `shafikmugenyi523@gmail.com`
 - **Location**: Kampala, Uganda (Available Globally / Remote)
 - **Status**: Open to entry-level software developer roles, internships, and collaborations.
